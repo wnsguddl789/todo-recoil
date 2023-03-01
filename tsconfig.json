@@ -20,13 +20,9 @@
       "@/*": ["*"],
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@contexts/*": ["contexts/*"],
-      "@hooks/*": ["hooks/*"],
-      "@modules/*": ["modules/*"],
-      "@hocs/*": ["hocs/*"],
-      "@configs/*": ["configs/*"],
-      "@themes/*": ["themes/*"],
-      "@constants/*": ["constants/*"]
+      "@hooks": ["hooks"],
+      "@atoms/*": ["recoil/atoms/*"],
+      "@selectors/*": ["recoil/selectors/*"]
     }
   },
   "include": ["src"],

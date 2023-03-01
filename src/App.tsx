@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 
-function App() {
-  return <div className="App"></div>;
+import TodoListPage from '@pages/TodoListPage';
+export default function App(): JSX.Element {
+  const router = createBrowserRouter([
+    {
+      element: <TodoListPage />,
+      path: '/',
+    },
+  ]);
+  return (
+    <RecoilRoot>
+      <RouterProvider router={router}></RouterProvider>
+    </RecoilRoot>
+  );
 }
-
-export default App;
